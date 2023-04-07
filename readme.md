@@ -1,6 +1,6 @@
 # Todo List Web App
 
-This is a simple Todo List Web App designed by Itamar Junior for my BSc in Computing subject Back-End Development.
+This is a Todo List Web App designed by Itamar Junior for my BSc in Computing subject Back-End Development, Year 3, Semester 2, 2023.
 
 The app is built with Django and Flask, two popular Python web frameworks, and MongoDB, a NoSQL database that provides great flexibility and scalability.
 
@@ -34,8 +34,11 @@ These steps were taken to ensure that the app is secure and that user data is pr
 ## How to Use
 
 Clone this repository to your local machine
+
 Install the necessary dependencies with pip install -r
+
 Run the app with python app.py
+
 Open your web browser and navigate to <http://localhost:5000>
 
 ## Testing
@@ -49,6 +52,7 @@ The app has been tested manually, and the following assertions have been used:
 - [x] A unit test has been added to test the data entry form of the TODO list application.
 
 The test_todo_list.py script is provided to test the behavior of the Todo list application.
+
 To run the tests, use the following command:
 
 ```python
