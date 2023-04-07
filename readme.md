@@ -46,12 +46,14 @@ The app has been tested manually, and the following assertions have been used:
 - [x] The app only displays the user's tasks on the home page after they have logged in.
 - [x] The app successfully creates a new task for the logged-in user and displays it on the TODO page.
 - [x] The app allows user to delete their tasks successfully.
+- [x] A unit test has been added to test the data entry form of the TODO list application.
 
-The test_todo_list.py script is provided to test the behavior of the todo list application.
+The test_todo_list.py script is provided to test the behavior of the Todo list application.
 To run the tests, use the following command:
 
 ```python
 python test_todo_list.py
+python test_form_todo.py
 ```
 
 Future improvements to the application could include additional testing, such as testing the database connection or testing edge cases. Additional features could also be added, such as email notifications or reminders for tasks.
