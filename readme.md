@@ -64,9 +64,15 @@ This project is open to contributions. If you find any bugs or would like to sug
 
 ![App Index/Home](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/index.png?raw=true)
 
-![App Index First Task](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/index%201%20first%20task.png?raw=true)
+![App Login](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/login.png?raw=true)
 
-![App Second Task](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/index%202%20second%20task.png?raw=true)
+![App Sign-up](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/signup.png?raw=true)
+
+![App Todo](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/todo.png?raw=true)
+
+![App New Todo](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/todo%20new.png?raw=true)
+
+![App Profile](https://github.com/codeitamarjr/Y3S2PythonDjangoFlaskMongoDBCA4/blob/master/screenshots/profile.png?raw=true)
 
 ## License
 
