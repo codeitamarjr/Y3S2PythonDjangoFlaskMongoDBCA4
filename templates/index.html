@@ -1,75 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        Welcome to my Todo List Web App!<br>
-        This app was designed by Itamar Junior as part of my Back-end Development course for my BSc in Computing in the year 2023.<br>
-        I built this project using Bootstrap for the front-end design and Django and Flask with MongoDB, hosted in a cloud free server by Atlas, for the back-end development.<br>
-        With this app, you can create, read, update, and delete your tasks with ease.<br>
-    <h1 class="display-5 fw-bold text-body-emphasis">+ New Todo</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
-          </p>
-            <div class="card shadow m-2">
-                <form method="post">
-                        <div class="mb-3 m-4">
-                            <label for="exampleFormControlInput1" class="form-label">Todo Content</label>
-                            <input type="text" class="form-control" type="text" name="content" placeholder="Todo Content">
-                        </div>
-                        <div class="mb-3 m-4">
-                            <div class="form-check">
-                              <input class="form-check-input" id="degree-0" name="degree" required type="radio" value="Important">
-                              <label class="form-check-label" for="degree-0">
-                                Important
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" id="degree-1" name="degree" required type="radio" value="Unimportant">
-                              <label class="form-check-label" for="degree-1">
-                                Unimportant
-                              </label>
-                            </div>
-                        </div>
-                    <button type="submit" class="btn btn-success mb-3 m-4">+ Save</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="content">
-
-    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-          <div class="list-group">
-
-               {% for todo in todos %}
-                   <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                        <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                      <div class="d-flex gap-2 w-100 justify-content-between">
-                        <div>
-                          <h6 class="mb-0">{{ todo['content'] }}</h6>
-                          <p class="mb-0 opacity-75">{{ todo['degree'] }}</p>
-                        </div>
-                        <small class="opacity-50 text-nowrap">{{ todo['degree'] }}</small>
-                          <form method="POST" action="{{ url_for('delete', id=todo['_id']) }}" >
-                                <input class="btn btn-danger" type="submit" value="Delete Todo"
-                                       onclick="return confirm('Are you sure you want to delete this entry?')">
-                          </form>
-                      </div>
-                   </a>
-                {% endfor %}
-          </div>
-        </div>
-
-        {% for todo in todos %}
-            <div class="todo">
-                <p>{{ todo['content'] }} <i>({{ todo['degree']}})</i></p>
-            <form method="POST" action="{{ url_for('delete', id=todo['_id']) }}" >
-                    <input type="submit" value="Delete Todo"
-                           onclick="return confirm('Are you sure you want to delete this entry?')">
-                </form>
-            </div>
-        {% endfor %}
-
-    </div>
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt=""
+    width="72" height="57">
+  Welcome to my Todo List Web App!<br>
+  This app was designed by Itamar Junior as part of my Back-end Development course for my BSc in Computing in the year
+  2023.<br>
+  I built this project using Bootstrap for the front-end design and Django and Flask with MongoDB, hosted in a cloud
+  free server by Atlas, for the back-end development.<br>
+  With this app, you can create, read, update, and delete your tasks with ease.<br>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">
+      Create an account and start using it now!
+    </p>
+  </div>
+</div>
 {% endblock %}

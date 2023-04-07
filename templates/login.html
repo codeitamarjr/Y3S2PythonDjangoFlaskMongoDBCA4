@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt=""
+        width="72" height="57">
+    <h1 class="display-5 fw-bold text-body-emphasis">Log in</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+        </p>
+        <div class="card shadow m-2">
+
+            <div class="card-body">
+
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <div class="alert alert-danger" role="alert">
+                    {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+                </div>
+                {% endif %}
+                {% endwith %}
+
+                <form method="POST" action="/login">
+                    <div class="field">
+                        <div class="control">
+                            <label for="label">Email</label>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="Your Email"
+                                autofocus="">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <label for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password"
+                                placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="checkbox">
+                            <label for="remember">Remember me</label>
+                            <input type="checkbox" name="remember" id="remember">
+                            Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-primary">Login</button>
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
